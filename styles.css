@@ -400,6 +400,33 @@ nav.scrolled {
     font-size: 1.1rem;
 }
 
+.price-indicator {
+    margin-top: 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+}
+
+.price-badge {
+    background: var(--gold) !important;
+    color: #000000 !important;
+    padding: 10px 20px !important;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    display: inline-block !important;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3) !important;
+    margin: 10px 0 !important;
+}
+
+.price-note {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -465,6 +492,87 @@ nav.scrolled {
 .service-card li::before {
     content: '✦';
     color: var(--gold);
+}
+
+.service-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-cta:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+}
+
+/* QUICK QUERIES */
+.quick-queries {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: white;
+}
+
+.queries-container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.queries-container h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.queries-container p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.queries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.query-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.query-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.query-btn i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.query-btn span {
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* GALLERY */
